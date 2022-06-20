@@ -12,8 +12,4 @@ npm run build
 
 ## Publishing
 
-To publish the project just run the publish command like:
-
-```sh
-npm publish
-```
+There is no need for manual publishing as this process is done in CI by [semantic-release](https://github.com/semantic-release/semantic-release).
