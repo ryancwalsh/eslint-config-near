@@ -27,6 +27,7 @@
     "lint": "npm run format && eslint --fix src/**/*.ts",
     "prebuild": "npm run lint",
     "build": "swc src --config-file .swcrc -d dist",
+    "test": "npm run build",
     "prepublish": "npm run build",
     "semantic-release": "semantic-release"
   },
