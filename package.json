@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-near",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESlint configuration for NEAR projects",
   "module": "commonjs",
   "author": {
