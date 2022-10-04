@@ -9,12 +9,16 @@ To install this configuration run the following command:
 ```sh
 npm install -D eslint-config-near
 ```
+or
+```sh
+yarn add -D eslint-config-near
+```
 
 ## Usage
 
 When configuring ESlint to use this configuration add the following to your config file:
 
-`.eslinrc.cjs`
+`.eslintrc.cjs`
 
 ```javascript
 /* eslint-env node */
@@ -22,6 +26,18 @@ When configuring ESlint to use this configuration add the following to your conf
 module.exports = {
   extends: ["near"],
 };
+```
+
+You might also want to create something like `.vscode/settings.json`:
+
+```JSON
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "eslint.workingDirectories": ["./server", "./src", "./shared"]
+}
 ```
 
 ## See also
