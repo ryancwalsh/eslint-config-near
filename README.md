@@ -16,6 +16,12 @@ yarn add -D eslint-config-near
 
 ## Usage
 
+```
+touch .eslintrc.cjs
+mkdir .vscode
+touch .vscode/settings.json
+```
+
 When configuring ESlint to use this configuration add the following to your config file:
 
 `.eslintrc.cjs`
@@ -27,6 +33,15 @@ module.exports = {
   extends: ["near"],
 };
 ```
+
+Feel free to customize, such as by adding `rules` as a sibling of `extends` such as:
+
+```
+rules: {
+  'no-console': 'off',
+}
+```
+
 
 You might also want to create something like `.vscode/settings.json`:
 
